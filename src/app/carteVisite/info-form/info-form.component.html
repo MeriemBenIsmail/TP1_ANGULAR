@@ -1,0 +1,40 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name" formControlName="name" />
+    </div>
+
+    <div class="form-group">
+        <label for="firstname">Firstname</label>
+        <input type="text" class="form-control" id="firstname" placeholder="Enter firstname"
+            formControlName="firstname" />
+    </div>
+    <div class="form-group">
+        <label for="job">Job</label>
+        <input type="text" class="form-control" id="job" placeholder="Enter job" formControlName="job" />
+    </div>
+
+    <div class="form-group">
+        <label for="path">Image</label>
+        <input type="text" class="form-control" id="path" placeholder="Enter image path" formControlName="path" />
+    </div>
+    <div class="form-group">
+        <label for="favouriteQuote">Favourite Quote</label>
+        <input type="text" class="form-control" id="favouriteQuote" placeholder="Enter favourite quote"
+            formControlName="favouriteQuote" />
+    </div>
+    <div class="form-group">
+        <label for="description">Job Description</label>
+        <input type="text" class="form-control" id="description" placeholder="Enter job description"
+            formControlName="description" />
+    </div>
+    <div class="form-group">
+        <label for="keywords">Job Keywords</label>
+        <input type="text" class="form-control" id="keywords" placeholder="Enter job keywords"
+            formControlName="keywords" />
+    </div>
+
+
+
+    <button class="btn btn-primary" type="submit">Submit Form</button>
+</form>
