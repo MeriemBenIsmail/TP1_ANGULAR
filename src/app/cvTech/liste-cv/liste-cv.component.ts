@@ -9,11 +9,11 @@ import { Personne } from 'src/app/model/Personne';
 export class ListeCvComponent implements OnInit {
   @Input()
   personnes: Personne[] = [];
-  @Output() selectedPersonne = new EventEmitter();
+  @Output() selectedPersonne = new EventEmitter<Personne>();
   constructor() {}
 
   ngOnInit(): void {}
-  selectPersonne(selectedPersonne: any) {
+  selectPersonne(selectedPersonne: Personne) {
     this.selectedPersonne.emit(selectedPersonne);
   }
 }

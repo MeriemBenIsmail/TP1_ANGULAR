@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit , Output} from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { Personne } from 'src/app/model/Personne';
 @Component({
@@ -8,13 +8,12 @@ import { Personne } from 'src/app/model/Personne';
 })
 export class InfoFormComponent implements OnInit {
   formGroup;
+  personne = new Personne();
   @Output() sendRequestToDad = new EventEmitter();
   constructor(private formBuilder: FormBuilder) {
     this.formGroup = this.formBuilder.group(new Personne());
   }
 
-  ngOnInit(): void {}
-  onSubmit(formData: any) {
-    this.sendRequestToDad.emit(formData);
-  }
+  ngOnInit(): void {this.sendRequestToDad.emit(this.personne);}
+ 
 }

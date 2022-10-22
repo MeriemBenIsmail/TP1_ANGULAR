@@ -10,7 +10,6 @@ import { DetailCvComponent } from './cvTech/detail-cv/detail-cv.component';
 import { FatherComponent } from './father/father.component';
 import { SonComponent } from './son/son.component';
 import { InfoFormComponent } from './carteVisite/info-form/info-form.component';
-import { DetailComponent } from './carteVisite/detail/detail.component';
 import { CarteComponent } from './carteVisite/carte/carte.component';
 
 @NgModule({
@@ -23,7 +22,6 @@ import { CarteComponent } from './carteVisite/carte/carte.component';
     FatherComponent,
     SonComponent,
     InfoFormComponent,
-    DetailComponent,
     CarteComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
