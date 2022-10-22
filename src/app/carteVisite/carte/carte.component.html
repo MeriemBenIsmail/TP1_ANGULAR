@@ -1,9 +1,9 @@
 <div class="row">
     <div class="col-md-6">
-        <app-detail></app-detail>
+        <app-detail [personne]="personne"></app-detail>
     </div>
     <div class="col-md-6 col-sm-9">
-        <app-info-form>
-            </app-info-form>
+        <app-info-form (sendRequestToDad)="processEvent($event)">
+        </app-info-form>
     </div>
 </div>
