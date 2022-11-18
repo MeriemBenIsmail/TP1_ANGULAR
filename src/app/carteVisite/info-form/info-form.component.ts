@@ -9,11 +9,12 @@ import { Personne } from 'src/app/model/Personne';
 export class InfoFormComponent implements OnInit {
   formGroup;
   personne = new Personne();
-  @Output() sendRequestToDad = new EventEmitter();
+  @Output() sendRequestToDad = new EventEmitter<Personne>();
   constructor(private formBuilder: FormBuilder) {
     this.formGroup = this.formBuilder.group(new Personne());
   }
 
-  ngOnInit(): void {this.sendRequestToDad.emit(this.personne);}
- 
+  ngOnInit(): void {
+    this.sendRequestToDad.emit(this.personne);
+  }
 }

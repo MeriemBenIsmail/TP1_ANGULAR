@@ -11,6 +11,11 @@ import { FatherComponent } from './father/father.component';
 import { SonComponent } from './son/son.component';
 import { InfoFormComponent } from './carteVisite/info-form/info-form.component';
 import { CarteComponent } from './carteVisite/carte/carte.component';
+import { WordComponent } from './directives/word/word.component';
+import { RainbowComponent } from './directives/rainbow/rainbow.component';
+import { RainbowDirective } from './directives/rainbow.directive';
+import { DefaultImagePipe } from './cvTech/default-image.pipe';
+import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +28,11 @@ import { CarteComponent } from './carteVisite/carte/carte.component';
     SonComponent,
     InfoFormComponent,
     CarteComponent,
+    WordComponent,
+    RainbowComponent,
+    RainbowDirective,
+    DefaultImagePipe,
+    EmbaucheComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

@@ -1,0 +1,18 @@
+<p [ngStyle]="{
+    'color' :color,
+    'backgroundColor': bgColor,
+    'fontSize':size,
+    'font-family':fontFamily
+}">word works!</p>
+
+<input type="text" class="form-control" [(ngModel)]="color">
+<input type="number" #sizeInput class="form-control" (change)="changeSize(sizeInput.value)">
+<select class="form-select" aria-label="Default select example" [(ngModel)]="fontFamily">
+    <option selected>Open this select menu</option>
+    <option>sans-serif</option>
+    <option>arial</option>
+    <option>roboto</option>
+    <option>verdana</option>
+    <option>georgia</option>
+    <option>courier new</option>
+</select>
